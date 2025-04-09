@@ -1,0 +1,53 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+body, html {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: #E0E0E0; /* Text color */
+    font-family: 'Lato', sans-serif;
+    height: 100%; /* Full height */
+    box-sizing: border-box; /* Ensure padding & border are included */
+    background-color: #333333;
+    scroll-behavior: smooth;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in animation to specific sections */
+.container, .about-container, .contact-container, .intro-section {
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.about-container {
+    animation-delay: 0.3s;
+}
+
+.contact-container {
+    animation-delay: 0.5s;
+}
+
+/* Other utility styles */
+.spacer {
+    flex: 1 1 auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
