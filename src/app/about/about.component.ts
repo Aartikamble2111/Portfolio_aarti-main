@@ -12,7 +12,7 @@ export class AboutComponent {
     name : 'Aarti Vivek Kamble',
     position : 'Angular Developer',
     dob : 'November 21, 1997',
-    address : 'Dubai Investment Park-1, Dubai, UAE ',
+    address : 'Dubai Investment Park-1, Dubai, UAE',
     email : 'kambleaarti2111@gmail.com',
     phone : '971561787404',
   };
