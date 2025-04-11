@@ -8,13 +8,13 @@
 
   <!-- Details Section -->
   <div class="details-section" fxFlex="50" fxFlex.lt-md="100">
-    <h1>About Me</h1>
+    <h1 style="margin-bottom: 30px;font-weight: 600;margin-top: auto20px;">About Me</h1>
     <p><b>Name :</b> {{ profile.name }}</p>
     <p><strong>Position :</strong> {{ profile.position }}</p>
     <p><strong>Date of Birth :</strong> {{ profile.dob }}</p>
     <p><strong>Phone :</strong> {{ profile.phone }}</p>
     <p><strong>Email :</strong> {{ profile.email }}</p>
-    <p style="margin-bottom: 30px;"><strong>Address :</strong> {{ profile.address }}</p>
+    <p style="margin-bottom: 60px;"><strong>Address :</strong> {{ profile.address }}</p>
     
     <button mat-flat-button (click)="downloadCV()" class="btn-CV">Download CV</button>
   </div>

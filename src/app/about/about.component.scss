@@ -8,6 +8,7 @@
   // align-items: center;
   text-align: left;
   gap: 20px;
+  padding-top: 60px;
 
 }
 
@@ -19,18 +20,83 @@
   
 }
 
+// .profile-image {
+//   width: 100%;
+//   max-width: 250px;
+//   height: auto;
+//   border-radius: 50%;
+// }
+.image-border {
+  width: 260px;
+  height: 260px;
+  padding: 5px;
+  background-color: #ffffff; /* or any border color */
+  border: 2px solid #0aa0f7; /* Customize this */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional */
+  border-radius: 10px; /* Makes it a square with rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-border:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 .profile-image {
   width: 100%;
-  max-width: 250px;
   height: auto;
-  border-radius: 50%;
+  padding: 5px;
+  max-width: 260px;
+  border-radius: 20px;
+  padding: 3px; /* Reduced padding for a thinner border look */
+  background: linear-gradient(270deg, #e4e4e4, #efefef, #ececec);
+  background-size: 400% 400%;
+  animation: borderAnimation 6s ease infinite;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.15),
+    inset 0 0 6px rgba(255, 255, 255, 0.08);
+
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  position: relative;
+  z-index: 1;
 }
+
+.profile-image:hover {
+  transform: scale(1.05) rotate3d(1, 1, 0, 6deg);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    inset 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Animation for gradient movement */
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
 
 /* Details Section */
 .details-section {
   text-align: left;
   padding: 20px;
   color: #f2fff2;
+  font-size: 18px;
  
 }
 
